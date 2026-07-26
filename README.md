@@ -71,15 +71,14 @@ As the four variables considered are numerical and the K-Means algorithm require
 
 To detect the group of students at risk of underperformance, the features <i>g3</i> and failures were selected. The elbow method indicated that the appropriate number of clusters was five. As shown in Figure 3, cluster 2 is characterised by low grades and the highest number of failures. This was also confirmed by a groupby analysis, which showed that cluster 2 had the second lowest mean <i>g3</i> grade (6.80) and the highest mean number of failures (2.50).
 
-<img width="513" height="400" alt="image" src="https://github.com/user-attachments/assets/659178b3-7a52-4ede-bf7f-5f4cf6ac5622" />
+<img width="466" height="365" alt="image" src="https://github.com/user-attachments/assets/659178b3-7a52-4ede-bf7f-5f4cf6ac5622" />
 
 Figure 3: cluster 2 shows the worst performance in terms of failures and grades
 
 To detect the group of students at risk of disengagement, the features <i>study_time</i> and absences were selected. The elbow method indicated that the appropriate number of clusters was four. Figure 4 indicates that cluster 2 is characterised by very low study time and the highest number of absences. The groupby analysis confirmed this result, as cluster 2 showed the second lowest mean study time (1.70) and the highest mean number of absences (17.94).
 
-<img width="964" height="447" alt="image" src="https://github.com/user-attachments/assets/fe77f3fd-5c61-4849-ae9f-89d9cc06fb8b" />
+<img width="964" height="447" alt="image" src="https://github.com/user-attachments/assets/24619a2d-e33c-447f-8289-a2ee17937e6e" />
 
- 
 Figure 4: cluster 2 indicates disengagement, reflected in both failures and grades
 
 To assess the models, the Silhouette Score was used because it measures how similar an object is to its own cluster compared with other clusters. This metric is easy to interpret, as it ranges from −1 to 1, with values closer to 1 indicating better-defined clusters. Furthermore, it provides insight into cluster cohesion and separation.
