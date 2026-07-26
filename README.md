@@ -71,7 +71,8 @@ As the four variables considered are numerical and the K-Means algorithm require
 
 To detect the group of students at risk of underperformance, the features <i>g3</i> and failures were selected. The elbow method indicated that the appropriate number of clusters was five. As shown in Figure 3, cluster 2 is characterised by low grades and the highest number of failures. This was also confirmed by a groupby analysis, which showed that cluster 2 had the second lowest mean <i>g3</i> grade (6.80) and the highest mean number of failures (2.50).
 
-<img width="580" height="386" alt="cluster 2 shows the worst performance in terms of failures and grades" src="https://github.com/user-attachments/assets/85e48c06-3db1-45ec-9810-e9adbb0e5c1a" />
+<img width="656" height="513" alt="image" src="https://github.com/user-attachments/assets/659178b3-7a52-4ede-bf7f-5f4cf6ac5622" />
+
 
 Figure 3: cluster 2 shows the worst performance in terms of failures and grades
 
