@@ -27,14 +27,6 @@ Students are assessed three times during the school year. The features <i>G1</i>
 
 ### Problem 1: which socio-economic, demographic, and academic factors most strongly influence the final grade (G3)?
 
-
-
-
-
-
-
-
-
 My initial assumption was that family situation could affect student performance, as grades cannot be explained solely from an academic perspective but need to consider different aspects of students’ lives.
 
 The exploratory data analysis showed that the dataset is clean, as no missing values, duplicate entries, invalid data types or outliers indicating potential data entry errors were detected. Only standardization of the column names was performed.
@@ -51,7 +43,7 @@ However, the results were not satisfactory. The R² score, used to determine the
 
 As a test, a model was run including all the previously excluded independent variables, and it was observed that the R² score was very high (0.80), while the MAE (1.02) and MSE (3.10) were very low, indicating a model capable of accurately predicting the target variable. However, as shown in Figure 1, analysis of the coefficients revealed that g2 clearly dominates all other variables. 
 
-<img width="991" height="579" alt="image" src="https://github.com/user-attachments/assets/f785fc10-e9b5-499a-bca8-2ebf8e60c13c" />
+<img width="480" height="319" alt="the top variables influencing g3 when using Multiple Linear Regression" src="https://github.com/user-attachments/assets/f785fc10-e9b5-499a-bca8-2ebf8e60c13c" />
 Figure 1: the top variables influencing g3 when using Multiple Linear Regression
 
 Decision Tree Regressor was applied to predict the target variable <i>g3</i>. This model can capture more complex, non-linear relationships without requiring normalization of the independent variables, while maintaining interpretability through a clear set of decision rules and feature importance measures that indicate the influence of each predictor. Furthermore, it can handle multicollinearity effectively due to its inherent nature of recursive splitting and feature selection.
