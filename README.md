@@ -41,21 +41,21 @@ Secondly, the Variance Inflation Factor (VIF) metric was used to detect variable
 
 However, the results were not satisfactory. The R² score, used to determine the explanatory power of the model, was 0.10, indicating that the model captured only a small portion of the variability in the data and therefore had limited effectiveness. The Mean Absolute Error (MAE) was 2.63. As 70.88% of <i>g3</i> values are concentrated between 8 and 12, this number represents a substantial deviation relative to the effective range of the data. The Mean Squared Error (MSE), which penalizes large errors more heavily, was 13.89, suggesting that the model’s predictions deviate further from the true values, indicating poorer performance. 
 
-As a test, a model was run including all the previously excluded independent variables, and it was observed that the R² score was very high (0.80), while the MAE (1.02) and MSE (3.10) were very low, indicating a model capable of accurately predicting the target variable. However, as shown in Figure 1, analysis of the coefficients revealed that g2 clearly dominates all other variables. 
+As a test, a model was run including all the previously excluded independent variables, and it was observed that the R² score was very high (0.80), while the MAE (1.02) and MSE (3.10) were very low, indicating a model capable of accurately predicting the target variable. However, as shown in Figure 1, analysis of the coefficients revealed that <i>g2</i>clearly dominates all other variables. 
 
 <img width="580" height="386" alt="the top variables influencing g3 when using Multiple Linear Regression" src="https://github.com/user-attachments/assets/f785fc10-e9b5-499a-bca8-2ebf8e60c13c" />
 
-Figure 1: the top variables influencing g3 when using Multiple Linear Regression
+Figure 1: the top variables influencing <i>g3</i> when using Multiple Linear Regression
 
 Decision Tree Regressor was applied to predict the target variable <i>g3</i>. This model can capture more complex, non-linear relationships without requiring normalization of the independent variables, while maintaining interpretability through a clear set of decision rules and feature importance measures that indicate the influence of each predictor. Furthermore, it can handle multicollinearity effectively due to its inherent nature of recursive splitting and feature selection.
 
 The results are very satisfactory. The R² score was 0.84, indicating the model was capable to predict the target variable. This is also confirmed by low MAE (0.93) and MSE (1.56), confirming a low margin of error compared to the target variable. 
 
-Even though the R² score was already high, cross-validation was applied to provide a more robust estimate of the model’s performance. This procedure evaluates the average performance across multiple training and validation splits, further reducing the risk of overfitting and assessing whether the model performs consistently across different subsets of the data. However, the R² score remained at a similar level (0.82), confirming the stability of the model. As shown in Figure 2, when examining the feature importances, the academic variable g2 showed an outstanding influence (0.92), clearly dominating all other predictors.
+Even though the R² score was already high, cross-validation was applied to provide a more robust estimate of the model’s performance. This procedure evaluates the average performance across multiple training and validation splits, further reducing the risk of overfitting and assessing whether the model performs consistently across different subsets of the data. However, the R² score remained at a similar level (0.82), confirming the stability of the model. As shown in Figure 2, when examining the feature importances, the academic variable <i>g2</i> showed an outstanding influence (0.92), clearly dominating all other predictors.
 
 <img width="580" height="386" alt="the top variables influencing g3 when using Decision Tree Regressor" src="https://github.com/user-attachments/assets/5326048b-d195-463b-91f3-388c0f8f68f3" />
 
-Figure 2: the top variables influencing g3 when using Decision Tree Regressor
+Figure 2: the top variables influencing <i>g3</i> when using Decision Tree Regressor
 
 In conclusion, although both models showed high predictive accuracy, an important limitation remains for explanatory analysis, as the strongest predictor, <i>g2</i>, dominated the results, masking the influence of socio-economic and demographic variables, which may still affect performance but are not effectively captured by the models.
 
