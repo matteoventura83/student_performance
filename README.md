@@ -33,7 +33,7 @@ The exploratory data analysis showed that the dataset is clean, as no missing va
 
 Supervised learning models were applied because the dataset contains labelled data, where several independent variables representing students’ characteristics were used to train the algorithm to predict the target variable, <i>g3</i>, which represents the final grade. However, as these models require numerical input, categorical variables were converted into numerical format during the preprocessing stage.
 
-Multiple Linear Regression was used to train the model using students’ characteristics to predict the g3 variable, explaining how the independent variables affect the target variable by providing coefficients for each predictor. 
+Multiple Linear Regression was used to train the model using students’ characteristics to predict the <i>g3</i> variable, explaining how the independent variables affect the target variable by providing coefficients for each predictor. 
 
 Before training the Multiple Linear Regression model, as the numerical independent variables covered distinctly different ranges, it was necessary to standardize them, transforming them to a similar scale so that the model could learn appropriate weights for each feature. In this way, variables with larger numerical ranges do not disproportionately influence the model, ensuring a more balanced contribution of each predictor and improving the accuracy of the coefficient estimates.
 
