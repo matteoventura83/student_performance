@@ -59,6 +59,7 @@ Figure 2: the top variables influencing <i>g3</i> when using Decision Tree Regre
 
 In conclusion, although both models showed high predictive accuracy, an important limitation remains for explanatory analysis, as the strongest predictor, <i>g2</i>, dominated the results, masking the influence of socio-economic and demographic variables, which may still affect performance but are not effectively captured by the models.
 
+
 ### Problem 2: detecting students at risk of underperformance and disengagement.
 
 The second problem addressed was the identification of at-risk students. My initial assumption was that underperformance could be identified by considering the variables <i>g3</i> and failures, while study_time and absences could be used to assess disengagement, since the time devoted to studying and school attendance are strong indicators of engagement. 
