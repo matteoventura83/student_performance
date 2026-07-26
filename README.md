@@ -54,6 +54,7 @@ The results are very satisfactory. The R² score was 0.84, indicating the model 
 Even though the R² score was already high, cross-validation was applied to provide a more robust estimate of the model’s performance. This procedure evaluates the average performance across multiple training and validation splits, further reducing the risk of overfitting and assessing whether the model performs consistently across different subsets of the data. However, the R² score remained at a similar level (0.82), confirming the stability of the model. As shown in Figure 2, when examining the feature importances, the academic variable g2 showed an outstanding influence (0.92), clearly dominating all other predictors.
 
 <img width="580" height="386" alt="the top variables influencing g3 when using Decision Tree Regressor" src="https://github.com/user-attachments/assets/5326048b-d195-463b-91f3-388c0f8f68f3" />
+
 Figure 2: the top variables influencing g3 when using Decision Tree Regressor
 
 In conclusion, although both models showed high predictive accuracy, an important limitation remains for explanatory analysis, as the strongest predictor, <i>g2</i>, dominated the results, masking the influence of socio-economic and demographic variables, which may still affect performance but are not effectively captured by the models.
