@@ -41,7 +41,7 @@ Secondly, the Variance Inflation Factor (VIF) metric was used to detect variable
 
 However, the results were not satisfactory. The R² score, used to determine the explanatory power of the model, was 0.10, indicating that the model captured only a small portion of the variability in the data and therefore had limited effectiveness. The Mean Absolute Error (MAE) was 2.63. As 70.88% of <i>g3</i> values are concentrated between 8 and 12, this number represents a substantial deviation relative to the effective range of the data. The Mean Squared Error (MSE), which penalizes large errors more heavily, was 13.89, suggesting that the model’s predictions deviate further from the true values, indicating poorer performance. 
 
-As a test, a model was run including all the previously excluded independent variables, and it was observed that the R² score was very high (0.80), while the MAE (1.02) and MSE (3.10) were very low, indicating a model capable of accurately predicting the target variable. However, as shown in Figure 1, analysis of the coefficients revealed that <i>g2</i>clearly dominates all other variables. 
+As a test, a model was run including all the previously excluded independent variables, and it was observed that the R² score was very high (0.80), while the MAE (1.02) and MSE (3.10) were very low, indicating a model capable of accurately predicting the target variable. However, as shown in Figure 1, analysis of the coefficients revealed that <i>g2</i> clearly dominates all other variables. 
 
 <img width="580" height="386" alt="the top variables influencing g3 when using Multiple Linear Regression" src="https://github.com/user-attachments/assets/f785fc10-e9b5-499a-bca8-2ebf8e60c13c" />
 
