@@ -62,9 +62,9 @@ In conclusion, although both models showed high predictive accuracy, an importan
 
 ### Problem 2: detecting students at risk of underperformance and disengagement.
 
-The second problem addressed was the identification of at-risk students. My initial assumption was that underperformance could be identified by considering the variables <i>g3</i> and failures, while study_time and absences could be used to assess disengagement, since the time devoted to studying and school attendance are strong indicators of engagement. 
+The second problem addressed was the identification of at-risk students. My initial assumption was that underperformance could be identified by considering the variables <i>g3</i> and <i>failures</i>, while <i>study_time</i> and <i>absences</i> could be used to assess disengagement, since the time devoted to studying and school attendance are strong indicators of engagement. 
 
-An unsupervised learning model was considered appropriate because, as the dataset does not contain variables explicitly indicating which students are underperforming or disengaged, it helps identify patterns without the guidance of labelled outputs. Clustering is an unsupervised technique which is particularly suitable because, by extracting patterns from the dataset, it groups unlabelled data with similar characteristics into distinct clusters. Among the several clustering techniques, K-Means was chosen because it aims to ensure that data points within a cluster are as close as possible to each other, ensuring high cohesion, while simultaneously maximizing the separation between clusters, thereby improving the visual interpretability of the results.
+An unsupervised learning model was considered appropriate because, as the dataset does not contain variables explicitly indicating which students are underperforming or disengaged, it helps identify patterns without the guidance of labelled outputs. Clustering is an unsupervised technique which is particularly suitable because, by extracting patterns from the dataset, it groups unlabelled data with similar characteristics into distinct clusters. Among the several clustering techniques, K-Means was chosen because it aims to ensure that data points within a cluster are as close as possible to each other, ensuring high cohesion, while simultaneously maximizing the separation between clusters.
 
 As previously noted, the exploratory data analysis showed that the dataset is clean. Although three students exhibited very high numbers of absences, they were not excluded because these values were realistic and such cases are common in schools.
 
@@ -76,7 +76,7 @@ To detect the group of students at risk of underperformance, the features <i>g3<
 
 Figure 3: cluster 2 shows the worst performance in terms of failures and grades
 
-To detect the group of students at risk of disengagement, the features <i>study_time</i> and absences were selected. The elbow method indicated that the appropriate number of clusters was four. Figure 4 indicates that cluster 2 is characterised by very low study time and the highest number of absences. The groupby analysis confirmed this result, as cluster 2 showed the second lowest mean study time (1.70) and the highest mean number of absences (17.94).
+To detect the group of students at risk of disengagement, the features <i>study_time</i> and <i>absences</i> were selected. The elbow method indicated that the appropriate number of clusters was four. Figure 4 indicates that cluster 2 is characterised by very low study time and the highest number of absences. The groupby analysis confirmed this result, as cluster 2 showed the second lowest mean study time (1.70) and the highest mean number of absences (17.94).
 
 <img width="580" height="269" alt="image" src="https://github.com/user-attachments/assets/24619a2d-e33c-447f-8289-a2ee17937e6e" />
 
@@ -84,6 +84,6 @@ Figure 4: cluster 2 indicates disengagement, reflected in both failures and grad
 
 To assess the models, the Silhouette Score was used because it measures how similar an object is to its own cluster compared with other clusters. This metric is easy to interpret, as it ranges from −1 to 1, with values closer to 1 indicating better-defined clusters. Furthermore, it provides insight into cluster cohesion and separation.
 
-The Davies–Bouldin index was also used, as it measures the size of clusters against the average distance between clusters. This metric is easy to interpret as it uses point-wise distances, and a lower score indicates better clustering. Furthermore, this index provides a more accurate assessment of the model stability, providing both intra-cluster and inter-cluster distances and ranking well-separated clusters with less dispersion with a higher score.
+The Davies–Bouldin index was also used, as it measures the size of clusters against the average distance between clusters. This metric is easy to interpret as it uses point-wise distances, and a lower score indicates better clustering. 
 
 Both metrics confirmed positively the reliability and stability of the clustering, indicating that the clusters effectively identify groups of students at risk: for the underperformance clustering, the Silhouette Score was 0.578 and the Davies–Bouldin Index was 0.596, while for the disengagement clustering the Silhouette Score was 0.555 and the Davies–Bouldin Index was 0.682. 
